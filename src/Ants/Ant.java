@@ -1,11 +1,15 @@
 import java.util.*;
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
 
 public class Ant{
    private double health;
    private double speed;
    private double damage;
    private String name;
-   private ImageIcon[] spriteSheet;
+   private BufferedImage spriteSheet;
    // spawnRate   
    
    public Ant(double h, double s, double d, String n){
@@ -13,6 +17,7 @@ public class Ant{
       speed = s;
       damage = d; 
       name = n;
+      spriteSheet = ImageIO.read(new File(name + ".png"));
    }
 
    
