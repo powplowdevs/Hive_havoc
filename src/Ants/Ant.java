@@ -9,15 +9,19 @@ public class Ant{
    private double speed;
    private double damage;
    private String name;
-   private BufferedImage spriteSheet;
-   // spawnRate   
+   private BufferedImage spriteSheet; 
    
    public Ant(double h, double s, double d, String n){
       health = h;
       speed = s;
       damage = d; 
       name = n;
-      spriteSheet = ImageIO.read(new File(name + ".png"));
+      try{
+         spriteSheet = ImageIO.read(new File("Sprites/" + name + ".png"));
+      }
+      catch(Exception v){
+         System.out.println(v);
+      }
    }
 
    

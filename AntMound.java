@@ -2,14 +2,14 @@ import java.util.*;
 
 public class AntMound{
    private double health;
-   private double spwanRate;
+   private double spawnRate;
    private Ant antType;
    private int level = 1;
    
    public AntMound(double h, double sr, Ant antTy){
       health = h;
       spawnRate = sr;
-      antTy = antTy
+      antType = antTy;
    }
 
    public double getHealth(){
@@ -19,9 +19,8 @@ public class AntMound{
     return antType;
    }
    public int getLevel(){
-    return level
+    return level;
    }
-
    public void levelUp(){
         level++;
    }
