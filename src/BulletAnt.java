@@ -1,3 +1,4 @@
+package src;
 public class BulletAnt extends Ant {
 
     public BulletAnt() {

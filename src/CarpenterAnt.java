@@ -1,5 +1,4 @@
-import java.awt.image.BufferedImage;
-import java.io.File;
+package src;
 
 public class CarpenterAnt extends Ant {
     

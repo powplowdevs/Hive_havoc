@@ -1,3 +1,4 @@
+package src;
 public class AcrobatAnt extends Ant {
 
     public AcrobatAnt() {

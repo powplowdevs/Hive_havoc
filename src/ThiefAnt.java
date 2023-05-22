@@ -1,3 +1,4 @@
+package src;
 public class ThiefAnt extends Ant {
 
     public ThiefAnt() {
