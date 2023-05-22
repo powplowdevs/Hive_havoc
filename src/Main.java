@@ -10,8 +10,8 @@ import java.util.ArrayList;
 
 class Main extends JPanel{
 
-    private static int HEIGHT;
-    private static int WIDTH;
+    private static int HEIGHT = 900;
+    private static int WIDTH = 500;
 
     //PLAYER1
     private ArrayList<Ant> p1Ants = new ArrayList<Ant>();
@@ -23,10 +23,11 @@ class Main extends JPanel{
     public void main(String[] args)
     {
         JFrame APP = new JFrame("Hive Havoc");
-        HEIGHT = APP.HEIGHT;
-        WIDTH = APP.WIDTH;
+        APP.setSize(WIDTH, HEIGHT);
+
         //temp stuff
         p1Mound = new AntMound(100, 10.0, new FireAnt());
+        paintComponent(getGraphics());
     }
     
     public static int getH(){
@@ -49,9 +50,9 @@ class Main extends JPanel{
 
         //Paint active ants
         
-        //paint the hill 
+        //paint the hill
+        p1Mound.draw(g);
         
-
     }
 
 }

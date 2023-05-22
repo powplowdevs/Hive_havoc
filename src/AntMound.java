@@ -18,7 +18,12 @@ public class AntMound extends JPanel{
       health = h;
       spawnRate = sr;
       antType = antTy;
-      sprite = ImageIO.read(new File("AntHill.png"));
+      try {
+            sprite = ImageIO.read(new File("AntHill.png"));
+        } 
+      catch (Exception e) {
+            sprite = null;
+        }
    }
 
    public void draw(Graphics g) {
